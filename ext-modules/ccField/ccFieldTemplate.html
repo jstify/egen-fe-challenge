@@ -1,0 +1,12 @@
+<div class="ccfield ccfield-area">
+    <div class="label">
+        <span class="text">{{fieldData.label}}</span>
+        <span class="required" ng-if="configData.required">*</span>
+    </div>
+    <div class="input-area" tab-index="1">
+        <div class="logo floatL" style="background-image:url('{{fieldData.logo}}')" ng-if="!configData.hideLogo"> </div>
+        <div class="inpt-wpr">
+            <input type="number" name="{{name}}" class="inpt-fld" ng-model="fieldData.cardNumber" ng-required="configData.required"/>
+        </div>
+    </div>
+</div>

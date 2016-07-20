@@ -1,0 +1,21 @@
+{
+  "name": "egen-fe-challenge",
+  "description": "Credt Card logo directive",
+  "main": "index.js",
+  "authors": [
+    "Narendra Kurapati <kurapati.narendra@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jstify/egen-fe-challenge",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}

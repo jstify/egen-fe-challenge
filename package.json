@@ -1,0 +1,36 @@
+{
+  "name": "egen-fe-challenge",
+  "version": "1.0.0",
+  "description": "Credt Card logo directive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstify/egen-fe-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jstify/egen-fe-challenge/issues"
+  },
+  "homepage": "https://github.com/jstify/egen-fe-challenge#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "*",
+    "main-bower-files": "*",
+    "gulp-filter": "*",
+    "gulp-order": "*",
+    "gulp-uglify": "*",
+    "gulp-print": "*",
+    "gulp-clean-css": "*",
+    "gulp-angular-filesort": "*",
+    "gulp-strip-line": "*",
+    "gulp-angular-templatecache": "*",
+    "gulp-live-server": "*"
+  },
+  "devDependencies": {
+    "gulp-load-plugins": "^1.2.4"
+  }
+}

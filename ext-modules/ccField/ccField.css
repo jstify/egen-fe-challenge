@@ -1,0 +1,63 @@
+.ccfield .floatL {
+  float: left;
+}
+.ccfield-area {
+  background-color: #f0f2f3;
+  padding: 8px;
+}
+.ccfield .label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.ccfield .label .required {
+  color: #17BAEA;
+}
+.ccfield .label .text {
+  color: #333333;
+}
+.ccfield .input-area {
+  margin-top: 8px;
+  width: 100%;
+  height: 40px;
+  border:1px solid #cfcfcf;
+  background-color: #fff;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.ccfield .input-area:focus {
+  border-color: #17BAEA;
+}
+.ccfield .logo {
+  width: 55px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #f0f2f3;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.ccfield .inpt-wpr {
+  width: auto;
+  overflow: hidden;
+  height: 100%;
+}
+
+.ccfield .inpt-fld{
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  height: inherit;
+  background: transparent;
+  padding: 0 5px;
+  font-size: 18px;
+}
+.ccfield .inpt-fld:focus {
+  outline: none;
+}
+
+.ccfield .inpt-fld::-webkit-inner-spin-button, 
+.ccfield .inpt-fld::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
