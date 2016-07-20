@@ -31481,6 +31481,22 @@ $provide.value("$locale", {
 angular.module("egenFeChallenge", ["ccField"]);
 /**
  * @ngdoc module egenFeChallenge
+ * @ngdoc config
+ * @ngdoc overview Application name (Root Module)
+ */
+
+"use strict"
+
+angular.module("egenFeChallenge")
+.config([
+    '$compileProvider', 
+    function ($compileProvider) {
+        //It will disabled adding and removing ng-scope classes to dom elements, 
+        //so that the performance will increase 
+        $compileProvider.debugInfoEnabled(false);
+}]);
+/**
+ * @ngdoc module egenFeChallenge
  * @ngdoc controller appController
  * @ngdoc overview Application root controller
  */
@@ -31738,7 +31754,6 @@ angular.module("ccField")
                         var cardDetails = ccFieldService.getCardDetailsByPattern(cardNumber);
                         if(cardDetails) {
                             scope.fieldData.logo = cardDetails.logo;
-                            console.log(cardDetails);
                         } else {
                             setDefaultLogoUrl();
                         }

@@ -72,7 +72,6 @@ angular.module("ccField")
                         var cardDetails = ccFieldService.getCardDetailsByPattern(cardNumber);
                         if(cardDetails) {
                             scope.fieldData.logo = cardDetails.logo;
-                            console.log(cardDetails);
                         } else {
                             setDefaultLogoUrl();
                         }
