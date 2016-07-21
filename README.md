@@ -8,7 +8,7 @@ An Angular component (directive or filter) that takes credit card number as the 
  - Gulp (for automation)
  - Angular
 
-##Implementation 
+##Implementation
 Developed a **ccField** directive, which renders credit card field with label and input. It is wrapped with **ccField** module, which has following components:
 
  - **ccFieldSupportingCards**: contains list of default supportd cards by directive (Currently, it supports Visa, Master, Maestro, Discover & Amex cards). The card model looks like as follows:
@@ -42,6 +42,22 @@ This directive can be integrated in any application by using following steps:
 	        hideLogo: true //To hide logo in field
 	    }`
 	    **name** - Input filed name to support form validation
+
+##Running Locally
+
+We can run application using two ways:
+
+**Using dist folder**: 
+The distribution files generated in **dist** folder, we can directly run `index.html` in browser.
+
+**Using gulp**:
+We need to have bower and npm installed, and run following commands in project folder:
+
+ - npm install
+ - bower install
+ - gulp serve
+
+Now application accessible at http://localhost:8080, Please open link in the browser. The files are still serving from dist folder only. 
 
 ##TODO
 
