@@ -31,9 +31,11 @@ This directive can be integrated in any application by using following steps:
  - Add ccField module to your app dependency.
 		`angular.module("egenFeChallenge", ["ccField"]);`
  -  Add directive wherever you want in the application.
+ -  
 		>`<cc-field config-data="configData" name="field1"></cc-field>`
 
 	The directive requires following attribute data:
+	
 		**configData**: `{
 	        label: "Card Number", // Title of the field
 	        required: true, // Required or not
@@ -41,6 +43,7 @@ This directive can be integrated in any application by using following steps:
 	        value: null, //Default card number
 	        hideLogo: true //To hide logo in field
 	    }`
+	    
 	    **name** - Input filed name to support form validation
 
 ##Running Locally
