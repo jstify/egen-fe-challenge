@@ -8,7 +8,7 @@ An Angular component (directive or filter) that takes credit card number as the 
  - Gulp (for automation)
  - Angular
 
-##Solution 
+##Implementation 
 Developed a **ccField** directive, which renders credit card field with label and input. It is wrapped with **ccField** module, which has following components:
 
  - **ccFieldSupportingCards**: contains list of default supportd cards by directive (Currently, it supports Visa, Master, Maestro, Discover & Amex cards). The card model looks like as follows:
