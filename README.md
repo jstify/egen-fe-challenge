@@ -31,7 +31,7 @@ This directive can be integrated in any application by using following steps:
  - Add ccField module to your app dependency.
 	`angular.module("egenFeChallenge", ["ccField"]);`
  -  Add directive wherever you want in the application.
- -  
+ 
 	> `<cc-field config-data="configData" name="field1"></cc-field>`
 
 	The directive requires following attribute data:
