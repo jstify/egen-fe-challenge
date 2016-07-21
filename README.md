@@ -12,13 +12,13 @@ An Angular component (directive or filter) that takes credit card number as the 
 Developed a **ccField** directive, which renders credit card field with label and input. It is wrapped with **ccField** module, which has following components:
 
  - **ccFieldSupportingCards**: contains list of default supportd cards by directive (Currently, it supports Visa, Master, Maestro, Discover & Amex cards). The card model looks like as follows:
-> `{
-		title: "Visa Card", 								//Card Name
-		type: "visa", 										//Card type same as name (but unique key for reference purpose)
-		logo: "assets/img/visaCard.png", 		//Card logo url
-		pattern: /^4/, 									//Card number match pattern, to determine type of the card
-		format: '' 											//Pattern to format the card number
-}`
+> {
+	title: "Visa Card", 				//Card Name
+	type: "visa", 					//Card type same as name (but unique key for reference purpose)
+	logo: "assets/img/visaCard.png", 		//Card logo url
+	pattern: /^4/, 					//Card number match pattern, to determine type of the card
+	format: '' 					//Pattern to format the card number
+}
 
  - **ccFieldService**: Using this service, new cards can be added to default supporting cards, or can update entire list with new list (but the list should have models as mentioned above).
 
@@ -29,22 +29,22 @@ This directive can be integrated in any application by using following steps:
 
  - Load `ccField.js` and `ccField.css` in DOM
  - Add ccField module to your app dependency.
-		`angular.module("egenFeChallenge", ["ccField"]);`
+	`angular.module("egenFeChallenge", ["ccField"]);`
  -  Add directive wherever you want in the application.
  -  
-		>`<cc-field config-data="configData" name="field1"></cc-field>`
+	> `<cc-field config-data="configData" name="field1"></cc-field>`
 
 	The directive requires following attribute data:
 	
-		**configData**: `{
+	**configData**: `{
 	        label: "Card Number", // Title of the field
 	        required: true, // Required or not
 	        format: true, // Want to format number or not
 	        value: null, //Default card number
 	        hideLogo: true //To hide logo in field
-	    }`
+	}`
 	    
-	    **name** - Input filed name to support form validation
+	**name** - Input filed name to support form validation
 
 ##Running Locally
 
